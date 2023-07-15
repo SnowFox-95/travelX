@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Стартовый шаблон</title>
-		<link rel="stylesheet" href="./css/main.css" />
-	</head>
-	<body>
-		<!-- @@include('blocks/header.html') -->
-		<!-- @@include('blocks/footer.html') -->
-		<header class="header">
-			<!-- Swiper -->
 
-			<!-- SliderContent -->
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Стартовый шаблон</title>
+	<link rel="stylesheet" href="./css/main.css" />
+</head>
 
-			<!-- HeaderContent -->
-			<div class="header__content">
-				<div class="header__nav"></div>
-				<div class="header__socials"></div>
-				<div class="header__see-more"></div>
-				<div class="header__slider-controls"></div>
-				<div class="header__scrollbar"></div>
+<body>
+	<!-- @@include('blocks/header.html') -->
+	<!-- @@include('blocks/footer.html') -->
+	<header class="header">
+		<!-- Swiper -->
+
+		<!-- SliderContent -->
+
+		<!-- HeaderContent -->
+		<div class="header__content">
+			<div class="header__nav">@@include('blocks/nav.html')</div>
+			<div class="header__socials">
+				@@include('blocks/socials.html')
 			</div>
-		</header>
-		<script src="./js/index.bundle.js"></script>
-	</body>
+			<div class="header__see-more">
+				@@include('blocks/see-more.html')
+			</div>
+			<div class="header__slider-controls">
+				@@include('blocks/slider-controls.html')
+			</div>
+			<div class="header__scrollbar"></div>
+		</div>
+	</header>
+	<script src="./js/index.bundle.js"></script>
+</body>
+
 </html>

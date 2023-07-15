@@ -3,9 +3,11 @@
 	position: relative;
 	background-color: #c4c4c4;
 	color: hsl(0, 0%, 100%);
-	background:{
-		image:url('./../img/header/bg-1.jpg')
-	};
+
+	background: {
+		image: url('./../img/header/bg-1.jpg');
+	}
+
 }
 
 .header a {
@@ -38,4 +40,65 @@
 		right: 5%;
 		bottom: 30px;
 	}
+}
+
+.header__nav {
+	pointer-events: all;
+}
+
+.header__socials {
+	position: absolute;
+	//z-index: 9;
+	left: 0;
+	top: 50%;
+	transform: translate(0%, -50%);
+	pointer-events: all;
+
+	//background-color: #878787;
+	//height: 140px;
+	//width: 30px;
+
+	@media (max-width:767px) {
+		display: none;
+	}
+
+	@media (max-height:600px) {
+		top: 40%;
+	}
+}
+
+.header__see-more {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	pointer-events: all;
+
+	/* 	background-color: #878787;
+	height: 120px;
+	width: 200px; */
+}
+
+.header__slider-controls {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	//z-index: 9;
+	pointer-events: all;
+
+	/* background-color: #878787;
+	height: 60px;
+	width: 80px; */
+}
+
+.header__scrollbar {
+	pointer-events: all;
+	position: absolute;
+	z-index: 9;
+	right: 0;
+	top: 50%;
+	transform: translate(0%, -50%);
+
+	background-color: #878787;
+	height: 400px;
+	width: 10px;
 }

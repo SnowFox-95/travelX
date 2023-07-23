@@ -14,12 +14,59 @@
 	
 	<header class="header">
 		<!-- Swiper -->
+		<style>
+    .swiper {
+        width: 600px;
+        height: 300px;
+    }
+</style>
 
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
 		<!-- SliderContent -->
-
+		<div class="header__slide">
+			<div class="slide">
+    <div class="slide__header">
+        <div class="slide__tagline">EXPLORE</div>
+        <h1 class="slide__title"><span>Norway</span></h1>
+    </div>
+    <div class="slide__locations">
+        <a href="#!" class="location">
+            <div class="location__title">Location#1</div>
+            <div class="location__link">Plan a trip</div>
+        </a>
+        <a href="#!" class="location">
+            <div class="location__title">Location#2</div>
+            <div class="location__link">Plan a trip</div>
+        </a>
+        <a href="#!" class="location">
+            <div class="location__title">Location#3</div>
+            <div class="location__link">Plan a trip</div>
+        </a>
+    </div>
+</div>
+		</div>
 		<!-- HeaderContent -->
-		<div class="header__content">
-			<div class="header__nav"><nav class="nav">
+		<div class="header__content none">
+    <div class="header__nav"><nav class="nav">
     <a href="#!" class="nav__logo">
         <img src="./../img/icons/logo.svg" alt="logo">
     </a>
@@ -38,20 +85,20 @@
         </button>
     </div>
 </nav></div>
-			<div class="header__socials">
-				<div class="socials">
+    <div class="header__socials">
+        <div class="socials">
     <a href="#!"><img src="./../img/socials/facebook.svg" alt=""></a>
     <a href="#!"><img src="./../img/socials/twitter.svg" alt=""></a>
     <a href="#!"><img src="./../img/socials/instagram.svg" alt=""></a>
 </div>
-			</div>
-			<div class="header__see-more">
-				<a href="#!" class="see-more">
+    </div>
+    <div class="header__see-more">
+        <a href="#!" class="see-more">
     SEE MORE
 </a>
-			</div>
-			<div class="header__slider-controls">
-				<div class="slider-controls">
+    </div>
+    <div class="header__slider-controls">
+        <div class="slider-controls">
     <div class="slider-controls__arrows">
         <button id="sliderPrev"><img src="./../img/icons/arrow-left.svg" alt=""></button>
         <button id="sliderNext"><img src="./../img/icons/arrow-right.svg" alt=""></button>
@@ -62,9 +109,9 @@
 
     </div>
 </div>
-			</div>
-			<div class="header__scrollbar"></div>
-		</div>
+    </div>
+    <div class="header__scrollbar"></div>
+</div>
 	</header>
 	<script src="./js/index.bundle.js"></script>
 </body>

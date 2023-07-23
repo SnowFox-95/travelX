@@ -14,23 +14,13 @@
 	<!-- @@include('blocks/footer.html') -->
 	<header class="header">
 		<!-- Swiper -->
-
+		@@include('blocks/swiper.html')
 		<!-- SliderContent -->
-
-		<!-- HeaderContent -->
-		<div class="header__content">
-			<div class="header__nav">@@include('blocks/nav.html')</div>
-			<div class="header__socials">
-				@@include('blocks/socials.html')
-			</div>
-			<div class="header__see-more">
-				@@include('blocks/see-more.html')
-			</div>
-			<div class="header__slider-controls">
-				@@include('blocks/slider-controls.html')
-			</div>
-			<div class="header__scrollbar"></div>
+		<div class="header__slide">
+			@@include('blocks/slide.html')
 		</div>
+		<!-- HeaderContent -->
+		@@include('blocks/header__content.html')
 	</header>
 	<script src="./js/index.bundle.js"></script>
 </body>

@@ -17,18 +17,17 @@
     flex-direction: column;
     justify-content: space-between;
 
-    /* background-color: #555; */
+    background-color: #555;
 
-    background: {
-        /* image: url('./../img/header/bg-1.jpg'); */
-        position: center center;
-        size: cover;
-        repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    & --slide--norway {
+        background: var(--radial-bg), var(--linear-bg),
+            url('./../../img/slider-bg/01.jpg');
     }
 
-    background: var(--radial-bg),
-    var(--linear-bg),
-    url('./../img/header/bg-1.jpg');
     color:#fff;
 
     &::before {
@@ -107,6 +106,7 @@
     @media (max-width: 1023px) {
         width: 90%;
     }
+
     @media (max-width: 767px) {
         width: 90%;
         flex-direction: column;

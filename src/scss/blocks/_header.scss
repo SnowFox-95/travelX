@@ -3,9 +3,6 @@
 	position: relative;
 	background-color: #c4c4c4;
 	color: hsl(0, 0%, 100%);
-
-	
-
 }
 
 .header a {
@@ -20,7 +17,7 @@
 	right: 70px;
 	bottom: 80px;
 
-	background-color: #d2cece34;
+	/* background-color: #d2cece34; */
 
 	pointer-events: none;
 
@@ -91,12 +88,13 @@
 .header__scrollbar {
 	pointer-events: all;
 	position: absolute;
-	z-index: 9;
 	right: 0;
-	top: 50%;
-	transform: translate(0%, -50%);
+	top: 45%;
+	height: 10px;
+	width: 400px;
 
-	background-color: #878787;
-	height: 400px;
-	width: 10px;
+	transform: rotate(90deg) translate(50%, 0%);
+	transform-origin: right top;
+
+	/* background-color: red; */
 }

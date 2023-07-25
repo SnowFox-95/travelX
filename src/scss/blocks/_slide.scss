@@ -15,6 +15,12 @@
     text-fill-color: transparent;
 }
 
+@mixin background-size {
+    background-position: center center;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
 .slide {
     height: 100vh;
     overflow: hidden;
@@ -25,34 +31,37 @@
     justify-content: space-between;
 
     background-color: #555;
+    @include background-size;
 
-    background-position: center center;
-    background-size: cover !important;
-    background-repeat: no-repeat;
 
     &--norway {
         background: var(--radial-bg), var(--linear-bg),
             url('./../img/slider-bg/01.jpg');
+        @include background-size;
     }
 
     &--austria {
         background: var(--radial-bg), var(--linear-bg),
             url('./../img/slider-bg/02.jpg');
+        @include background-size;
     }
 
     &--uae {
         background: var(--radial-bg), var(--linear-bg),
             url('./../img/slider-bg/03.jpg');
+        @include background-size;
     }
 
     &--thailand {
         background: var(--radial-bg), var(--linear-bg),
             url('./../img/slider-bg/04.jpg');
+        @include background-size;
     }
 
     &--morocco {
         background: var(--radial-bg), var(--linear-bg),
             url('./../img/slider-bg/05.jpg');
+        @include background-size;
     }
 
     color:#fff;
@@ -136,18 +145,21 @@
                 rgba(255, 255, 255, 0) 20.89%), #fff;
         @include backgroud-clip;
     }
+
     &--uae span {
         background: linear-gradient(47.06deg,
                 #aa6621 -3.87%,
                 rgba(255, 255, 255, 0) 20.89%), #fff;
         @include backgroud-clip;
     }
+
     &--thailand span {
         background: linear-gradient(47.06deg,
                 #2e7c88 -3.87%,
                 rgba(255, 255, 255, 0) 20.89%), #fff;
         @include backgroud-clip;
     }
+
     &--morocco span {
         background: linear-gradient(47.06deg,
                 #757575 -3.87%,

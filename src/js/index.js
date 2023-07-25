@@ -1,12 +1,13 @@
-import mobileNav from './modules/mobile-nav.js';
+import mobileNav from "./modules/mobile-nav.js";
+import loader from "./modules/loader.js";
+loader();
 mobileNav();
 
-
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+import Swiper from "swiper/bundle";
+import "swiper/css/bundle";
 
 // init Swiper:
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper(".swiper", {
   // Optional parameters
   loop: true,
   parallax: true,
@@ -18,18 +19,18 @@ const swiper = new Swiper('.swiper', {
 
   // If we need pagination
   pagination: {
-    el: '.slider-controls__count',
-    type: 'fraction',
+    el: ".slider-controls__count",
+    type: "fraction",
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '#sliderNext',
-    prevEl: '#sliderPrev',
+    nextEl: "#sliderNext",
+    prevEl: "#sliderPrev",
   },
 
   // And if we need scrollbar
   scrollbar: {
-    el: '.swiper-scrollbar',
+    el: ".swiper-scrollbar",
   },
 });
